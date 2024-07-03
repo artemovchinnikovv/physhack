@@ -5,6 +5,11 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T2A]{fontenc}
 
+\usepackage{subfigure}
+\usepackage[]{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
 \usepackage[russian,english]{babel}
 
 %Information to be included in the title page:
@@ -47,35 +52,79 @@
 \maketitle
 \end{frame}
 
-\section{Аннотация}
+
+
+\section{От самого прочного}
 
 \begin{frame}
-\frametitle{Аннотация}
+\frametitle{От самого прочного}
+    В этой части работы сравниваются результаты статьи по ранжированию узлов по прочности с экспериментальным ранжированием.
+\end{frame}
+
+\begin{frame}
+\frametitle{От самого прочного}
+
+\begin{figure}%
+    \centering
+    \subfloat[\centering ранжирование]{{\includegraphics[scale=0.4]{str.png} }}%
+    \qquad
+    \subfloat[\centering узлы]{{\includegraphics[scale=0.28]{type.png} }}%
+    \caption{2 Figures side by side}%
+    \label{fig:example}%
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{От самого прочного}
+
+\begin{figure}%
+    \centering
+    \subfloat[\centering ранжирование]{{\includegraphics[scale=0.4]{str.png} }}%
+    \qquad
+    \begin{tabular}{ c c c }
+    node 1 & force, kg \\
+    $3_1$ & 7.6 \\
+    $7_1$ & 7.5 \\
+    $4_1$ & 8.1 \\
+    $0$ & 10.4 \\
+    \end{tabular}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{От самого прочного}
+
+\begin{figure}%
+    \centering
+    \subfloat[\centering ранжирование]{{\includegraphics[scale=0.4]{str.png} }}%
+    \qquad
+    \begin{tabular}{ c c c }
+    node 2 & force, kg \\
+    $3_1$ & 6.8 \\
+    $7_1$ & 8.0 \\
+    $4_1$ & 8.2 \\
+    $0$ & 12 \\
+    \end{tabular}
+\end{figure}
 
 \end{frame}
 
 
-\section{Введение}
+\section{В процентах}
 
 \begin{frame}
-\frametitle{Введение}
+\frametitle{В процентах}
+
+\begin{figure}%
+    \centering
+    \subfloat[\centering нить 1]{{\includegraphics[scale=0.33]{data_1_thread_max_to_node.png} }}%
+    \qquad
+    \subfloat[\centering нить 2]{{\includegraphics[scale=0.33]{data_2_thread_max_to_node.png} }}%
+\end{figure}
 
 \end{frame}
 
 
-\section{Теоретическая модель}
-
-\begin{frame}
-\frametitle{}
-    
-\end{frame}
-
-\section{Эксперимент}
-
-\begin{frame}
-\frametitle{}
-    
-\end{frame}
-
-\section{}
 \end{document}
