@@ -20,7 +20,7 @@ for bar, value in zip(bars, data):
     i=i+1
 
 # Добавляем заголовок и метки осей
-plt.title('Пример гистограммы с подписями')
+plt.title('1 node, d = 0.6 mm, lavsan')
 plt.xlabel(x_name)
 plt.ylabel(y_name)
 
